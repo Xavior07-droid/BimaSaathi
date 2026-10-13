@@ -1,0 +1,43 @@
+{
+  "$defs": {
+    "ReasonItem": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "description": "the id of the input reason this text rewords, copied exactly",
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "text": {
+          "description": "the reworded reason: same facts, simple neutral words, 1-2 short sentences",
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "text"
+      ],
+      "title": "ReasonItem",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "What the review-reason rewording call returns (A25). Reasons are produced by rules in code; this only rewords them.",
+  "properties": {
+    "reasons": {
+      "items": {
+        "$ref": "#/$defs/ReasonItem"
+      },
+      "title": "Reasons",
+      "type": "array"
+    }
+  },
+  "required": [
+    "reasons"
+  ],
+  "title": "FraudReasonOutput",
+  "type": "object"
+}

@@ -1,0 +1,99 @@
+{
+  "description": "What the document-classify call returns (A23): facts read off ONE claim-document image. R's checker compares them in code.",
+  "properties": {
+    "dates": {
+      "description": "dates printed on the document, ISO format, each with a label",
+      "items": {
+        "properties": {
+          "date": {
+            "format": "date",
+            "type": "string"
+          },
+          "label": {
+            "enum": [
+              "admission",
+              "discharge",
+              "bill",
+              "report",
+              "prescription",
+              "other"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "label",
+          "date"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "doc_type": {
+      "description": "what kind of document this is; unreadable if you cannot tell",
+      "enum": [
+        "claim_form",
+        "discharge_summary",
+        "hospital_bill",
+        "pharmacy_bill",
+        "investigation_report",
+        "prescription",
+        "doctor_note",
+        "id_proof",
+        "insurance_card",
+        "cancelled_cheque",
+        "police_report",
+        "other",
+        "unreadable"
+      ],
+      "type": "string"
+    },
+    "has_signature": {
+      "description": "true only if a handwritten signature is visible",
+      "type": "boolean"
+    },
+    "has_stamp": {
+      "description": "true only if a hospital/doctor/pharmacy stamp or seal is visible",
+      "type": "boolean"
+    },
+    "issues": {
+      "description": "problems that make this image hard to use",
+      "items": {
+        "enum": [
+          "blurry",
+          "too_dark",
+          "glare",
+          "cut_off",
+          "rotated",
+          "handwriting_hard_to_read",
+          "partial_page",
+          "low_resolution",
+          "unreadable"
+        ],
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "patient_name": {
+      "description": "the patient's name in English letters, or null if not shown",
+      "nullable": true,
+      "type": "string"
+    },
+    "quality": {
+      "description": "good = all text readable; fair = key fields readable; poor = key fields hard to read",
+      "enum": [
+        "good",
+        "fair",
+        "poor"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "doc_type",
+    "has_stamp",
+    "has_signature",
+    "quality"
+  ],
+  "type": "object"
+}

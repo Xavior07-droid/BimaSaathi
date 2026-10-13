@@ -1,0 +1,23 @@
+{
+  "description": "What the compare-recommendation call returns (A24): the same 3-4 sentences in three languages. Numbers come from the input facts.",
+  "properties": {
+    "en": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "hi": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "mr": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "en",
+    "hi",
+    "mr"
+  ],
+  "type": "object"
+}

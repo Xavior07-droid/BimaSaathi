@@ -1,0 +1,15 @@
+# BimaSaathi backend (Python 3.12). Versions verified by a clean install on 3.12.
+fastapi==0.143.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+pydantic-settings==2.15.0
+python-multipart==0.0.32
+google-genai==2.29.0
+pymupdf==1.28.2
+pillow==12.3.0
+firebase-admin==7.7.0
+gTTS==2.5.4          # optional, only used when USE_GTTS=true
+# test tooling (kept here so CI needs only one install step)
+pytest==9.1.1
+httpx==0.28.1
+pytest-asyncio==1.4.0

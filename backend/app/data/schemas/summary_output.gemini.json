@@ -1,0 +1,67 @@
+{
+  "description": "What the SECOND Gemini call returns.",
+  "properties": {
+    "plain_summary": {
+      "properties": {
+        "en": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "hi": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "mr": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "en",
+        "hi",
+        "mr"
+      ],
+      "type": "object"
+    },
+    "red_flags": {
+      "items": {
+        "properties": {
+          "source": {
+            "properties": {
+              "clause": {
+                "description": "Clause / section number or heading, e.g. '4.2' or 'Exclusions'",
+                "minLength": 1,
+                "type": "string"
+              },
+              "page": {
+                "description": "1-based page number from the [Page N] marker",
+                "minimum": 1,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "page",
+              "clause"
+            ],
+            "type": "object"
+          },
+          "why_it_matters": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "why_it_matters",
+          "source"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "plain_summary"
+  ],
+  "type": "object"
+}

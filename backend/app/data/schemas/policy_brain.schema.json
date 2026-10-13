@@ -1,0 +1,508 @@
+{
+  "$defs": {
+    "ClaimRequirements": {
+      "additionalProperties": false,
+      "properties": {
+        "cashless": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Cashless",
+          "type": "array"
+        },
+        "intimation_deadline_hours": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Intimation Deadline Hours"
+        },
+        "reimbursement": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Reimbursement",
+          "type": "array"
+        }
+      },
+      "title": "ClaimRequirements",
+      "type": "object"
+    },
+    "CoveredItem": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "text",
+        "source"
+      ],
+      "title": "CoveredItem",
+      "type": "object"
+    },
+    "ExclusionItem": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "text",
+        "source"
+      ],
+      "title": "ExclusionItem",
+      "type": "object"
+    },
+    "ExtractionMeta": {
+      "additionalProperties": false,
+      "properties": {
+        "confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence"
+        },
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "file_hash": {
+          "description": "sha256 hex of the uploaded bytes",
+          "minLength": 1,
+          "title": "File Hash",
+          "type": "string"
+        },
+        "model": {
+          "minLength": 1,
+          "title": "Model",
+          "type": "string"
+        },
+        "schema_version": {
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "model",
+        "file_hash",
+        "created_at"
+      ],
+      "title": "ExtractionMeta",
+      "type": "object"
+    },
+    "PlainSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "minLength": 1,
+          "title": "En",
+          "type": "string"
+        },
+        "hi": {
+          "minLength": 1,
+          "title": "Hi",
+          "type": "string"
+        },
+        "mr": {
+          "minLength": 1,
+          "title": "Mr",
+          "type": "string"
+        }
+      },
+      "required": [
+        "en",
+        "hi",
+        "mr"
+      ],
+      "title": "PlainSummary",
+      "type": "object"
+    },
+    "RedFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "why_it_matters": {
+          "minLength": 1,
+          "title": "Why It Matters",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "why_it_matters",
+        "source"
+      ],
+      "title": "RedFlag",
+      "type": "object"
+    },
+    "RoomRentCap": {
+      "additionalProperties": false,
+      "properties": {
+        "unit": {
+          "enum": [
+            "per_day",
+            "percent_of_sum_insured"
+          ],
+          "title": "Unit",
+          "type": "string"
+        },
+        "value": {
+          "minimum": 0,
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "title": "RoomRentCap",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "clause": {
+          "description": "Clause / section number or heading, e.g. '4.2' or 'Exclusions'",
+          "minLength": 1,
+          "title": "Clause",
+          "type": "string"
+        },
+        "page": {
+          "description": "1-based page number from the [Page N] marker",
+          "minimum": 1,
+          "title": "Page",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "page",
+        "clause"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "SubLimit": {
+      "additionalProperties": false,
+      "properties": {
+        "item": {
+          "minLength": 1,
+          "title": "Item",
+          "type": "string"
+        },
+        "limit": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Limit"
+        },
+        "source": {
+          "$ref": "#/$defs/Source"
+        }
+      },
+      "required": [
+        "item",
+        "source"
+      ],
+      "title": "SubLimit",
+      "type": "object"
+    },
+    "WaitingPeriods": {
+      "additionalProperties": false,
+      "properties": {
+        "initial_days": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Initial Days"
+        },
+        "pre_existing_months": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pre Existing Months"
+        },
+        "specific_diseases_months": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Specific Diseases Months"
+        }
+      },
+      "title": "WaitingPeriods",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Full stored document (Firestore policies/{policy_id}).",
+  "properties": {
+    "claim_requirements": {
+      "$ref": "#/$defs/ClaimRequirements"
+    },
+    "copay_percent": {
+      "anyOf": [
+        {
+          "maximum": 100,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Copay Percent"
+    },
+    "covered": {
+      "items": {
+        "$ref": "#/$defs/CoveredItem"
+      },
+      "title": "Covered",
+      "type": "array"
+    },
+    "end_date": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "End Date"
+    },
+    "exclusions": {
+      "items": {
+        "$ref": "#/$defs/ExclusionItem"
+      },
+      "title": "Exclusions",
+      "type": "array"
+    },
+    "extraction_meta": {
+      "$ref": "#/$defs/ExtractionMeta"
+    },
+    "holder_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Holder Name"
+    },
+    "insurer": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Insurer"
+    },
+    "plain_summary": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/PlainSummary"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "policy_id": {
+      "minLength": 1,
+      "title": "Policy Id",
+      "type": "string"
+    },
+    "policy_no": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Policy No"
+    },
+    "policy_type": {
+      "anyOf": [
+        {
+          "enum": [
+            "health",
+            "motor",
+            "life"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Policy Type"
+    },
+    "premium": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Premium"
+    },
+    "red_flags": {
+      "items": {
+        "$ref": "#/$defs/RedFlag"
+      },
+      "title": "Red Flags",
+      "type": "array"
+    },
+    "renewal_date": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Renewal Date"
+    },
+    "room_rent_cap": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/RoomRentCap"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "start_date": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Start Date"
+    },
+    "sub_limits": {
+      "items": {
+        "$ref": "#/$defs/SubLimit"
+      },
+      "title": "Sub Limits",
+      "type": "array"
+    },
+    "sum_insured": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Sum Insured"
+    },
+    "waiting_periods": {
+      "$ref": "#/$defs/WaitingPeriods"
+    }
+  },
+  "required": [
+    "policy_id",
+    "extraction_meta"
+  ],
+  "title": "PolicyBrain",
+  "type": "object"
+}

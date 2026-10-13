@@ -1,0 +1,35 @@
+{
+  "additionalProperties": false,
+  "description": "What the exclusion-match call returns (A22). Code validates the indexes and builds the citations.",
+  "properties": {
+    "matched": {
+      "description": "0-based indexes from the numbered exclusion list, most specific first, at most 3; empty for no_match",
+      "items": {
+        "type": "integer"
+      },
+      "title": "Matched",
+      "type": "array"
+    },
+    "reason": {
+      "description": "One short English sentence naming the exclusion by its wording and why it applies; empty string for no_match",
+      "title": "Reason",
+      "type": "string"
+    },
+    "verdict": {
+      "description": "match = clearly inside an exclusion; possible = might apply, depends on facts not given; no_match = no listed exclusion applies (this does NOT mean covered)",
+      "enum": [
+        "match",
+        "possible",
+        "no_match"
+      ],
+      "title": "Verdict",
+      "type": "string"
+    }
+  },
+  "required": [
+    "verdict",
+    "reason"
+  ],
+  "title": "ExclusionMatchOutput",
+  "type": "object"
+}

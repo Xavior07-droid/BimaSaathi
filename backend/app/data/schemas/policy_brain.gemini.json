@@ -1,0 +1,332 @@
+{
+  "description": "Full stored document (Firestore policies/{policy_id}).",
+  "properties": {
+    "claim_requirements": {
+      "properties": {
+        "cashless": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "intimation_deadline_hours": {
+          "minimum": 0,
+          "nullable": true,
+          "type": "integer"
+        },
+        "reimbursement": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "copay_percent": {
+      "maximum": 100,
+      "minimum": 0,
+      "nullable": true,
+      "type": "number"
+    },
+    "covered": {
+      "items": {
+        "properties": {
+          "source": {
+            "properties": {
+              "clause": {
+                "description": "Clause / section number or heading, e.g. '4.2' or 'Exclusions'",
+                "minLength": 1,
+                "type": "string"
+              },
+              "page": {
+                "description": "1-based page number from the [Page N] marker",
+                "minimum": 1,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "page",
+              "clause"
+            ],
+            "type": "object"
+          },
+          "text": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "source"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "end_date": {
+      "format": "date",
+      "nullable": true,
+      "type": "string"
+    },
+    "exclusions": {
+      "items": {
+        "properties": {
+          "source": {
+            "properties": {
+              "clause": {
+                "description": "Clause / section number or heading, e.g. '4.2' or 'Exclusions'",
+                "minLength": 1,
+                "type": "string"
+              },
+              "page": {
+                "description": "1-based page number from the [Page N] marker",
+                "minimum": 1,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "page",
+              "clause"
+            ],
+            "type": "object"
+          },
+          "text": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "source"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "extraction_meta": {
+      "properties": {
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "nullable": true,
+          "type": "number"
+        },
+        "created_at": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "file_hash": {
+          "description": "sha256 hex of the uploaded bytes",
+          "minLength": 1,
+          "type": "string"
+        },
+        "model": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "schema_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "model",
+        "file_hash",
+        "created_at"
+      ],
+      "type": "object"
+    },
+    "holder_name": {
+      "nullable": true,
+      "type": "string"
+    },
+    "insurer": {
+      "nullable": true,
+      "type": "string"
+    },
+    "plain_summary": {
+      "nullable": true,
+      "properties": {
+        "en": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "hi": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "mr": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "en",
+        "hi",
+        "mr"
+      ],
+      "type": "object"
+    },
+    "policy_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "policy_no": {
+      "nullable": true,
+      "type": "string"
+    },
+    "policy_type": {
+      "enum": [
+        "health",
+        "motor",
+        "life"
+      ],
+      "nullable": true,
+      "type": "string"
+    },
+    "premium": {
+      "minimum": 0,
+      "nullable": true,
+      "type": "integer"
+    },
+    "red_flags": {
+      "items": {
+        "properties": {
+          "source": {
+            "properties": {
+              "clause": {
+                "description": "Clause / section number or heading, e.g. '4.2' or 'Exclusions'",
+                "minLength": 1,
+                "type": "string"
+              },
+              "page": {
+                "description": "1-based page number from the [Page N] marker",
+                "minimum": 1,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "page",
+              "clause"
+            ],
+            "type": "object"
+          },
+          "why_it_matters": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "why_it_matters",
+          "source"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "renewal_date": {
+      "format": "date",
+      "nullable": true,
+      "type": "string"
+    },
+    "room_rent_cap": {
+      "nullable": true,
+      "properties": {
+        "unit": {
+          "enum": [
+            "per_day",
+            "percent_of_sum_insured"
+          ],
+          "type": "string"
+        },
+        "value": {
+          "minimum": 0,
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "type": "object"
+    },
+    "start_date": {
+      "format": "date",
+      "nullable": true,
+      "type": "string"
+    },
+    "sub_limits": {
+      "items": {
+        "properties": {
+          "item": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "limit": {
+            "minimum": 0,
+            "nullable": true,
+            "type": "integer"
+          },
+          "source": {
+            "properties": {
+              "clause": {
+                "description": "Clause / section number or heading, e.g. '4.2' or 'Exclusions'",
+                "minLength": 1,
+                "type": "string"
+              },
+              "page": {
+                "description": "1-based page number from the [Page N] marker",
+                "minimum": 1,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "page",
+              "clause"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "item",
+          "source"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "sum_insured": {
+      "minimum": 0,
+      "nullable": true,
+      "type": "integer"
+    },
+    "waiting_periods": {
+      "properties": {
+        "initial_days": {
+          "minimum": 0,
+          "nullable": true,
+          "type": "integer"
+        },
+        "pre_existing_months": {
+          "minimum": 0,
+          "nullable": true,
+          "type": "integer"
+        },
+        "specific_diseases_months": {
+          "minimum": 0,
+          "nullable": true,
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "required": [
+    "policy_id",
+    "extraction_meta"
+  ],
+  "type": "object"
+}

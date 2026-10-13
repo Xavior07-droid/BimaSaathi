@@ -1,0 +1,55 @@
+{
+  "$defs": {
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "clause": {
+          "description": "Clause / section number or heading, e.g. '4.2' or 'Exclusions'",
+          "minLength": 1,
+          "title": "Clause",
+          "type": "string"
+        },
+        "page": {
+          "description": "1-based page number from the [Page N] marker",
+          "minimum": 1,
+          "title": "Page",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "page",
+        "clause"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "What the Ask call returns (A18/A19). Code, not the model, decides what the user finally sees:\ngrounded=False or no (valid) citation -> the fixed 'policy is not clear' fallback in the chosen language.",
+  "properties": {
+    "answer": {
+      "description": "Plain-language answer in the requested language; empty string when grounded is false",
+      "title": "Answer",
+      "type": "string"
+    },
+    "citations": {
+      "description": "page + clause copied from source objects in the policy JSON; empty when grounded is false",
+      "items": {
+        "$ref": "#/$defs/Source"
+      },
+      "title": "Citations",
+      "type": "array"
+    },
+    "grounded": {
+      "description": "true only if the policy JSON states the answer AND at least one source is cited",
+      "title": "Grounded",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "answer",
+    "grounded"
+  ],
+  "title": "AskOutput",
+  "type": "object"
+}

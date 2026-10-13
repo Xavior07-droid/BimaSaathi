@@ -1,0 +1,971 @@
+{
+  "_meta": {
+    "version": 1,
+    "langs": [
+      "en",
+      "hi",
+      "mr"
+    ],
+    "note": "Plain-language insurance glossary for India. aliases are lowercase English strings used to match terms in policy text. Hindi and Marathi need a native-speaker review (A15).",
+    "reviewed_by_native_speaker": false
+  },
+  "terms": [
+    {
+      "id": "co_pay",
+      "aliases": [
+        "co-pay",
+        "copay",
+        "co-payment",
+        "copayment"
+      ],
+      "term": {
+        "en": "Co-pay",
+        "hi": "को-पे (Co-pay)",
+        "mr": "को-पे (Co-pay)"
+      },
+      "definition": {
+        "en": "The share of every claim that you pay yourself; the insurer pays the rest. Example: with 10% co-pay on a Rs 1,00,000 bill, you pay Rs 10,000.",
+        "hi": "हर क्लेम में आपको अपनी जेब से देने वाला हिस्सा; बाकी रकम बीमा कंपनी देती है। जैसे 10% को-पे में 1,00,000 रुपये के बिल पर आप 10,000 रुपये देते हैं।",
+        "mr": "प्रत्येक क्लेममध्ये तुम्ही स्वतः भरायची रक्कम; उरलेली रक्कम विमा कंपनी देते. उदा. 10% को-पे असेल तर 1,00,000 रुपयांच्या बिलात तुम्ही 10,000 रुपये भरता."
+      }
+    },
+    {
+      "id": "sub_limit",
+      "aliases": [
+        "sub-limit",
+        "sub limit",
+        "sublimit",
+        "sub-limits"
+      ],
+      "term": {
+        "en": "Sub-limit",
+        "hi": "सब-लिमिट (Sub-limit)",
+        "mr": "सब-लिमिट (Sub-limit)"
+      },
+      "definition": {
+        "en": "A smaller cap on what the insurer pays for one specific item, even if your total sum insured is higher. Example: cataract surgery capped at Rs 40,000.",
+        "hi": "किसी एक खास इलाज या खर्च पर बीमा कंपनी के भुगतान की छोटी सीमा, भले ही आपकी कुल बीमा राशि ज़्यादा हो। जैसे मोतियाबिंद ऑपरेशन पर 40,000 रुपये की सीमा।",
+        "mr": "एखाद्या विशिष्ट उपचारासाठी किंवा खर्चासाठी विमा कंपनी देत असलेल्या रकमेची लहान मर्यादा, एकूण विमा रक्कम जास्त असली तरी. उदा. मोतीबिंदू शस्त्रक्रियेवर 40,000 रुपयांची मर्यादा."
+      }
+    },
+    {
+      "id": "waiting_period",
+      "aliases": [
+        "waiting period",
+        "waiting periods"
+      ],
+      "term": {
+        "en": "Waiting period",
+        "hi": "वेटिंग पीरियड (प्रतीक्षा अवधि)",
+        "mr": "वेटिंग पीरियड (प्रतीक्षा कालावधी)"
+      },
+      "definition": {
+        "en": "The time after buying the policy during which certain claims are not paid. You can only claim for those after the period ends.",
+        "hi": "पॉलिसी लेने के बाद का वह समय जिसमें कुछ बीमारियों या इलाज के क्लेम नहीं मिलते। यह अवधि पूरी होने के बाद ही उनका क्लेम कर सकते हैं।",
+        "mr": "पॉलिसी घेतल्यानंतरचा तो काळ ज्यामध्ये काही आजारांचे किंवा उपचारांचे क्लेम मिळत नाहीत. हा कालावधी संपल्यानंतरच त्यांचा क्लेम करता येतो."
+      }
+    },
+    {
+      "id": "initial_waiting_period",
+      "aliases": [
+        "initial waiting period",
+        "30-day waiting period",
+        "first 30 days"
+      ],
+      "term": {
+        "en": "Initial waiting period",
+        "hi": "शुरुआती वेटिंग पीरियड (Initial waiting period)",
+        "mr": "सुरुवातीचा वेटिंग पीरियड (Initial waiting period)"
+      },
+      "definition": {
+        "en": "The first days after your policy starts (often 30 days) when no illness claim is paid. Accidents are usually allowed.",
+        "hi": "पॉलिसी शुरू होने के पहले कुछ दिन (अक्सर 30 दिन) जब बीमारी का कोई क्लेम नहीं मिलता। दुर्घटना का क्लेम आमतौर पर मिल जाता है।",
+        "mr": "पॉलिसी सुरू झाल्यानंतरचे पहिले काही दिवस (बहुतेकदा 30 दिवस) ज्यात आजाराचा कोणताही क्लेम मिळत नाही. अपघाताचा क्लेम सहसा मिळतो."
+      }
+    },
+    {
+      "id": "specific_disease_waiting",
+      "aliases": [
+        "specific disease waiting period",
+        "specific waiting period",
+        "specified disease waiting period"
+      ],
+      "term": {
+        "en": "Specific disease waiting period",
+        "hi": "खास बीमारियों का वेटिंग पीरियड",
+        "mr": "विशिष्ट आजारांचा वेटिंग पीरियड"
+      },
+      "definition": {
+        "en": "A longer wait (often 1 to 3 years) for named conditions such as cataract, hernia, joint replacement or kidney stones.",
+        "hi": "कुछ तय बीमारियों जैसे मोतियाबिंद, हर्निया, जोड़ प्रत्यारोपण या पथरी के लिए लंबा इंतज़ार (अक्सर 1 से 3 साल)।",
+        "mr": "काही ठरावीक आजारांसाठी, जसे मोतीबिंदू, हर्निया, सांधेरोपण किंवा किडनी स्टोन, मोठी प्रतीक्षा (बहुतेकदा 1 ते 3 वर्षे)."
+      }
+    },
+    {
+      "id": "room_rent_cap",
+      "aliases": [
+        "room rent cap",
+        "room rent limit",
+        "room rent",
+        "room rent capping",
+        "room rent restriction",
+        "room category"
+      ],
+      "term": {
+        "en": "Room rent cap",
+        "hi": "रूम रेंट कैप (कमरे के किराये की सीमा)",
+        "mr": "रूम रेंट कॅप (खोली भाड्याची मर्यादा)"
+      },
+      "definition": {
+        "en": "The most the insurer allows per day for your hospital room. If you pick a costlier room, other charges may also be cut in proportion.",
+        "hi": "अस्पताल के कमरे के लिए बीमा कंपनी रोज़ का जितना किराया मानती है उसकी अधिकतम सीमा। महँगा कमरा लेने पर बाकी खर्च भी अनुपात में कट सकता है।",
+        "mr": "रुग्णालयातील खोलीसाठी विमा कंपनी रोज जास्तीत जास्त किती भाडे मान्य करते त्याची मर्यादा. महाग खोली घेतल्यास इतर खर्चही प्रमाणात कमी होऊ शकतो."
+      }
+    },
+    {
+      "id": "cashless",
+      "aliases": [
+        "cashless",
+        "cashless facility",
+        "cashless claim",
+        "cashless hospitalization",
+        "cashless hospitalisation"
+      ],
+      "term": {
+        "en": "Cashless",
+        "hi": "कैशलेस (Cashless)",
+        "mr": "कॅशलेस (Cashless)"
+      },
+      "definition": {
+        "en": "The insurer pays the hospital directly, so you do not pay the covered bill upfront. Usually only at network hospitals.",
+        "hi": "बीमा कंपनी सीधे अस्पताल को भुगतान करती है, इसलिए कवर किया गया बिल आपको पहले नहीं भरना पड़ता। आमतौर पर सिर्फ नेटवर्क अस्पतालों में।",
+        "mr": "विमा कंपनी थेट रुग्णालयाला पैसे देते, त्यामुळे कव्हर झालेले बिल तुम्हाला आधी भरावे लागत नाही. सहसा फक्त नेटवर्क रुग्णालयांमध्ये."
+      }
+    },
+    {
+      "id": "reimbursement",
+      "aliases": [
+        "reimbursement",
+        "reimbursement claim",
+        "reimburse"
+      ],
+      "term": {
+        "en": "Reimbursement claim",
+        "hi": "रीइंबर्समेंट क्लेम (खर्च की वापसी)",
+        "mr": "रीइंबर्समेंट क्लेम (खर्चाची परतफेड)"
+      },
+      "definition": {
+        "en": "You pay the hospital first, then send bills and documents to the insurer to get the covered amount back.",
+        "hi": "पहले आप अस्पताल को खुद भुगतान करते हैं, फिर बिल और कागज़ात बीमा कंपनी को भेजकर कवर की गई रकम वापस पाते हैं।",
+        "mr": "आधी तुम्ही रुग्णालयाला स्वतः पैसे भरता, मग बिले आणि कागदपत्रे विमा कंपनीला पाठवून कव्हर झालेली रक्कम परत मिळवता."
+      }
+    },
+    {
+      "id": "tpa",
+      "aliases": [
+        "tpa",
+        "third party administrator",
+        "third-party administrator"
+      ],
+      "term": {
+        "en": "TPA (Third Party Administrator)",
+        "hi": "टीपीए (TPA - थर्ड पार्टी एडमिनिस्ट्रेटर)",
+        "mr": "टीपीए (TPA - थर्ड पार्टी अ‍ॅडमिनिस्ट्रेटर)"
+      },
+      "definition": {
+        "en": "A company that works between you and the insurer to handle claims, approvals and hospital payments.",
+        "hi": "एक कंपनी जो आपके और बीमा कंपनी के बीच क्लेम, मंज़ूरी और अस्पताल के भुगतान संभालती है।",
+        "mr": "तुमच्या आणि विमा कंपनीमधील क्लेम, मंजुरी आणि रुग्णालयाची देयके हाताळणारी कंपनी."
+      }
+    },
+    {
+      "id": "pre_existing_disease",
+      "aliases": [
+        "pre-existing disease",
+        "pre existing disease",
+        "pre-existing condition",
+        "ped",
+        "pre-existing diseases"
+      ],
+      "term": {
+        "en": "Pre-existing disease",
+        "hi": "पहले से मौजूद बीमारी (Pre-existing disease)",
+        "mr": "आधीपासून असलेला आजार (Pre-existing disease)"
+      },
+      "definition": {
+        "en": "An illness you already had, or were diagnosed or treated for, before buying the policy. Usually covered only after a waiting period.",
+        "hi": "ऐसी बीमारी जो पॉलिसी लेने से पहले से आपको थी, या जिसका निदान या इलाज पहले हो चुका था। आमतौर पर वेटिंग पीरियड के बाद ही कवर होती है।",
+        "mr": "पॉलिसी घेण्यापूर्वी तुम्हाला असलेला किंवा ज्याचे निदान किंवा उपचार आधी झाले आहेत असा आजार. सहसा वेटिंग पीरियडनंतरच कव्हर होतो."
+      }
+    },
+    {
+      "id": "sum_insured",
+      "aliases": [
+        "sum insured",
+        "sum assured",
+        "coverage amount",
+        "cover amount",
+        "si"
+      ],
+      "term": {
+        "en": "Sum insured",
+        "hi": "बीमा राशि (Sum insured)",
+        "mr": "विमा रक्कम (Sum insured)"
+      },
+      "definition": {
+        "en": "The maximum total amount the insurer will pay in one policy year.",
+        "hi": "एक पॉलिसी वर्ष में बीमा कंपनी जितनी अधिकतम कुल रकम देगी।",
+        "mr": "एका पॉलिसी वर्षात विमा कंपनी जास्तीत जास्त एकूण जेवढी रक्कम देईल ती."
+      }
+    },
+    {
+      "id": "premium",
+      "aliases": [
+        "premium",
+        "premium amount"
+      ],
+      "term": {
+        "en": "Premium",
+        "hi": "प्रीमियम (Premium)",
+        "mr": "प्रीमियम (Premium)"
+      },
+      "definition": {
+        "en": "The amount you pay (yearly or in instalments) to keep the policy active.",
+        "hi": "पॉलिसी चालू रखने के लिए आप जो रकम (सालाना या किस्तों में) भरते हैं।",
+        "mr": "पॉलिसी चालू ठेवण्यासाठी तुम्ही भरत असलेली रक्कम (वार्षिक किंवा हप्त्यांमध्ये)."
+      }
+    },
+    {
+      "id": "deductible",
+      "aliases": [
+        "deductible",
+        "voluntary deductible",
+        "compulsory deductible"
+      ],
+      "term": {
+        "en": "Deductible",
+        "hi": "डिडक्टिबल (Deductible)",
+        "mr": "डिडक्टिबल (Deductible)"
+      },
+      "definition": {
+        "en": "A fixed amount you pay from your own pocket before the insurer starts paying a claim.",
+        "hi": "एक तय रकम जो क्लेम में बीमा कंपनी के भुगतान शुरू करने से पहले आपको अपनी जेब से देनी होती है।",
+        "mr": "एक ठरलेली रक्कम जी क्लेममध्ये विमा कंपनी पैसे देण्यास सुरुवात करण्यापूर्वी तुम्हाला स्वतःच्या खिशातून भरावी लागते."
+      }
+    },
+    {
+      "id": "exclusion",
+      "aliases": [
+        "exclusion",
+        "exclusions",
+        "not covered",
+        "permanent exclusion",
+        "excluded"
+      ],
+      "term": {
+        "en": "Exclusion",
+        "hi": "एक्सक्लूज़न (बहिष्करण)",
+        "mr": "एक्सक्लूजन (वगळलेल्या गोष्टी)"
+      },
+      "definition": {
+        "en": "Something the policy will never pay for, such as cosmetic surgery or injury from war.",
+        "hi": "ऐसी चीज़ जिसका खर्च पॉलिसी कभी नहीं देती, जैसे कॉस्मेटिक सर्जरी या युद्ध में लगी चोट।",
+        "mr": "ज्याचा खर्च पॉलिसी कधीच देत नाही अशी गोष्ट, जसे कॉस्मेटिक शस्त्रक्रिया किंवा युद्धात झालेली दुखापत."
+      }
+    },
+    {
+      "id": "pre_authorization",
+      "aliases": [
+        "pre-authorization",
+        "pre authorization",
+        "preauthorization",
+        "pre-authorisation",
+        "prior approval",
+        "pre-auth"
+      ],
+      "term": {
+        "en": "Pre-authorization",
+        "hi": "प्री-ऑथराइज़ेशन (पूर्व मंज़ूरी)",
+        "mr": "प्री-ऑथोरायझेशन (पूर्वमंजुरी)"
+      },
+      "definition": {
+        "en": "Approval from the insurer or TPA before planned treatment, needed for cashless claims.",
+        "hi": "तय इलाज से पहले बीमा कंपनी या टीपीए से ली जाने वाली मंज़ूरी, जो कैशलेस क्लेम के लिए ज़रूरी होती है।",
+        "mr": "नियोजित उपचारापूर्वी विमा कंपनी किंवा टीपीएकडून घ्यायची मंजुरी, जी कॅशलेस क्लेमसाठी आवश्यक असते."
+      }
+    },
+    {
+      "id": "network_hospital",
+      "aliases": [
+        "network hospital",
+        "network hospitals",
+        "empanelled hospital",
+        "empaneled hospital",
+        "network provider"
+      ],
+      "term": {
+        "en": "Network hospital",
+        "hi": "नेटवर्क अस्पताल (Network hospital)",
+        "mr": "नेटवर्क रुग्णालय (Network hospital)"
+      },
+      "definition": {
+        "en": "A hospital that has a tie-up with your insurer, where cashless treatment is available.",
+        "hi": "वह अस्पताल जिसका आपकी बीमा कंपनी से समझौता है और जहाँ कैशलेस इलाज मिलता है।",
+        "mr": "तुमच्या विमा कंपनीशी करार असलेले रुग्णालय, जिथे कॅशलेस उपचार मिळतात."
+      }
+    },
+    {
+      "id": "renewal",
+      "aliases": [
+        "renewal",
+        "renew",
+        "renewal date",
+        "policy renewal",
+        "renewal premium"
+      ],
+      "term": {
+        "en": "Renewal",
+        "hi": "रिन्यूअल (नवीनीकरण)",
+        "mr": "रिन्यूअल (नूतनीकरण)"
+      },
+      "definition": {
+        "en": "Paying again to continue the policy for another year. Missing the date can end your cover and your waiting-period credit.",
+        "hi": "पॉलिसी को अगले साल जारी रखने के लिए दोबारा भुगतान करना। तारीख चूकने पर कवर और जमा हुआ वेटिंग पीरियड का फायदा जा सकता है।",
+        "mr": "पॉलिसी पुढील वर्षासाठी चालू ठेवण्यासाठी पुन्हा पैसे भरणे. तारीख चुकल्यास कव्हर आणि जमा झालेला वेटिंग पीरियडचा फायदा जाऊ शकतो."
+      }
+    },
+    {
+      "id": "grace_period",
+      "aliases": [
+        "grace period",
+        "grace days"
+      ],
+      "term": {
+        "en": "Grace period",
+        "hi": "ग्रेस पीरियड (छूट अवधि)",
+        "mr": "ग्रेस पीरियड (सवलतीचा कालावधी)"
+      },
+      "definition": {
+        "en": "Extra days after the renewal date to pay the premium without losing continuity. Claims during this gap are usually not paid.",
+        "hi": "रिन्यूअल की तारीख के बाद के अतिरिक्त दिन जिनमें प्रीमियम भरने पर पॉलिसी की निरंतरता बनी रहती है। इस दौरान के क्लेम आमतौर पर नहीं मिलते।",
+        "mr": "रिन्यूअलच्या तारखेनंतरचे अतिरिक्त दिवस ज्यात प्रीमियम भरल्यास पॉलिसीचे सातत्य टिकते. या काळातील क्लेम सहसा मिळत नाहीत."
+      }
+    },
+    {
+      "id": "free_look_period",
+      "aliases": [
+        "free look period",
+        "free-look period",
+        "free look"
+      ],
+      "term": {
+        "en": "Free-look period",
+        "hi": "फ्री-लुक पीरियड",
+        "mr": "फ्री-लुक पीरियड"
+      },
+      "definition": {
+        "en": "A short window after buying (usually 15 days) to cancel the policy and get your premium back, minus small charges.",
+        "hi": "पॉलिसी खरीदने के बाद का छोटा समय (आमतौर पर 15 दिन) जिसमें आप पॉलिसी रद्द करके थोड़ी कटौती के बाद प्रीमियम वापस ले सकते हैं।",
+        "mr": "पॉलिसी घेतल्यानंतरचा छोटा कालावधी (सहसा 15 दिवस) ज्यात तुम्ही पॉलिसी रद्द करून थोडी कपात वजा जाता प्रीमियम परत घेऊ शकता."
+      }
+    },
+    {
+      "id": "no_claim_bonus",
+      "aliases": [
+        "no claim bonus",
+        "no-claim bonus",
+        "ncb",
+        "cumulative bonus",
+        "bonus"
+      ],
+      "term": {
+        "en": "No-claim bonus",
+        "hi": "नो-क्लेम बोनस (No-claim bonus)",
+        "mr": "नो-क्लेम बोनस (No-claim bonus)"
+      },
+      "definition": {
+        "en": "A reward for a claim-free year: either extra sum insured at no cost, or a discount on next year's premium.",
+        "hi": "क्लेम न करने वाले साल का इनाम: बिना अतिरिक्त शुल्क बढ़ी हुई बीमा राशि, या अगले साल के प्रीमियम पर छूट।",
+        "mr": "क्लेम न केलेल्या वर्षाचे बक्षीस: कोणत्याही अतिरिक्त शुल्काशिवाय वाढलेली विमा रक्कम, किंवा पुढील वर्षाच्या प्रीमियमवर सवलत."
+      }
+    },
+    {
+      "id": "proportionate_deduction",
+      "aliases": [
+        "proportionate deduction",
+        "proportionate deductions",
+        "proportionate reduction",
+        "pro-rata deduction"
+      ],
+      "term": {
+        "en": "Proportionate deduction",
+        "hi": "अनुपातिक कटौती (Proportionate deduction)",
+        "mr": "प्रमाणशीर कपात (Proportionate deduction)"
+      },
+      "definition": {
+        "en": "If your room is costlier than the cap, the insurer cuts other bills (doctor fees, procedures) by the same ratio, not just the room rent.",
+        "hi": "कमरा सीमा से महँगा लेने पर बीमा कंपनी सिर्फ किराया नहीं, डॉक्टर की फीस और प्रक्रियाओं जैसे बाकी बिल भी उसी अनुपात में घटा देती है।",
+        "mr": "खोली मर्यादेपेक्षा महाग घेतल्यास विमा कंपनी फक्त भाडेच नव्हे तर डॉक्टर फी आणि प्रक्रियांसारखी इतर बिलेही त्याच प्रमाणात कमी करते."
+      }
+    },
+    {
+      "id": "day_care_procedure",
+      "aliases": [
+        "day care",
+        "day-care",
+        "day care procedure",
+        "day care procedures",
+        "day-care treatment",
+        "daycare"
+      ],
+      "term": {
+        "en": "Day-care procedure",
+        "hi": "डे-केयर प्रक्रिया (Day-care procedure)",
+        "mr": "डे-केअर प्रक्रिया (Day-care procedure)"
+      },
+      "definition": {
+        "en": "Treatment that needs hospital facilities but takes less than 24 hours, such as dialysis or cataract surgery.",
+        "hi": "ऐसा इलाज जिसमें अस्पताल की सुविधा चाहिए पर 24 घंटे से कम लगते हैं, जैसे डायलिसिस या मोतियाबिंद ऑपरेशन।",
+        "mr": "रुग्णालयाच्या सुविधेची गरज असलेला पण 24 तासांपेक्षा कमी वेळ लागणारा उपचार, जसे डायलिसिस किंवा मोतीबिंदू शस्त्रक्रिया."
+      }
+    },
+    {
+      "id": "domiciliary_hospitalization",
+      "aliases": [
+        "domiciliary hospitalization",
+        "domiciliary hospitalisation",
+        "domiciliary treatment",
+        "home treatment",
+        "home care treatment"
+      ],
+      "term": {
+        "en": "Domiciliary hospitalization",
+        "hi": "घर पर इलाज (Domiciliary hospitalization)",
+        "mr": "घरी उपचार (Domiciliary hospitalization)"
+      },
+      "definition": {
+        "en": "Treatment taken at home because you could not be moved to a hospital, or no bed was available. Covered only if the policy says so.",
+        "hi": "ऐसा इलाज जो अस्पताल ले जाना संभव न होने या बिस्तर न मिलने पर घर पर लिया गया हो। सिर्फ तभी कवर होता है जब पॉलिसी में लिखा हो।",
+        "mr": "रुग्णालयात नेणे शक्य नसल्याने किंवा खाट उपलब्ध नसल्याने घरी घेतलेला उपचार. पॉलिसीत तसे लिहिले असेल तरच कव्हर होतो."
+      }
+    },
+    {
+      "id": "pre_hospitalization",
+      "aliases": [
+        "pre-hospitalization",
+        "pre hospitalization",
+        "pre-hospitalisation",
+        "pre-hospitalization expenses"
+      ],
+      "term": {
+        "en": "Pre-hospitalization",
+        "hi": "भर्ती से पहले का खर्च (Pre-hospitalization)",
+        "mr": "दाखल होण्यापूर्वीचा खर्च (Pre-hospitalization)"
+      },
+      "definition": {
+        "en": "Medical costs (tests, consultations) in the days before admission that are linked to the same illness; many policies cover 30 to 60 days.",
+        "hi": "अस्पताल में भर्ती होने से पहले के दिनों में उसी बीमारी से जुड़े जाँच और परामर्श के खर्च; कई पॉलिसियाँ 30 से 60 दिन तक कवर करती हैं।",
+        "mr": "रुग्णालयात दाखल होण्यापूर्वीच्या दिवसांत त्याच आजाराशी संबंधित तपासण्या आणि सल्ल्याचा खर्च; अनेक पॉलिसी 30 ते 60 दिवस कव्हर करतात."
+      }
+    },
+    {
+      "id": "post_hospitalization",
+      "aliases": [
+        "post-hospitalization",
+        "post hospitalization",
+        "post-hospitalisation",
+        "post-hospitalization expenses"
+      ],
+      "term": {
+        "en": "Post-hospitalization",
+        "hi": "छुट्टी के बाद का खर्च (Post-hospitalization)",
+        "mr": "डिस्चार्जनंतरचा खर्च (Post-hospitalization)"
+      },
+      "definition": {
+        "en": "Medical costs (medicines, follow-up visits) in the days after discharge for the same illness; many policies cover 60 to 90 days.",
+        "hi": "अस्पताल से छुट्टी के बाद के दिनों में उसी बीमारी की दवाइयों और फॉलो-अप के खर्च; कई पॉलिसियाँ 60 से 90 दिन तक कवर करती हैं।",
+        "mr": "रुग्णालयातून सुट्टी मिळाल्यानंतरच्या दिवसांत त्याच आजाराची औषधे आणि पाठपुरावा तपासणीचा खर्च; अनेक पॉलिसी 60 ते 90 दिवस कव्हर करतात."
+      }
+    },
+    {
+      "id": "ambulance_cover",
+      "aliases": [
+        "ambulance cover",
+        "ambulance charges",
+        "ambulance"
+      ],
+      "term": {
+        "en": "Ambulance cover",
+        "hi": "एम्बुलेंस कवर (Ambulance cover)",
+        "mr": "रुग्णवाहिका कव्हर (Ambulance cover)"
+      },
+      "definition": {
+        "en": "Reimbursement of ambulance charges to a hospital, usually up to a fixed limit per claim.",
+        "hi": "अस्पताल तक एम्बुलेंस के खर्च की वापसी, आमतौर पर हर क्लेम पर एक तय सीमा तक।",
+        "mr": "रुग्णालयापर्यंतच्या रुग्णवाहिकेच्या खर्चाची परतफेड, सहसा प्रत्येक क्लेमवर ठरावीक मर्यादेपर्यंत."
+      }
+    },
+    {
+      "id": "policyholder",
+      "aliases": [
+        "policyholder",
+        "policy holder",
+        "proposer",
+        "insured person",
+        "insured"
+      ],
+      "term": {
+        "en": "Policyholder",
+        "hi": "पॉलिसीधारक (Policyholder)",
+        "mr": "पॉलिसीधारक (Policyholder)"
+      },
+      "definition": {
+        "en": "The person who buys the policy and whose name is on it. The people covered are the insured members.",
+        "hi": "वह व्यक्ति जो पॉलिसी खरीदता है और जिसका नाम उस पर है। कवर होने वाले लोग बीमित सदस्य कहलाते हैं।",
+        "mr": "पॉलिसी खरेदी करणारी आणि ज्याचे नाव त्यावर आहे अशी व्यक्ती. कव्हर होणाऱ्या व्यक्तींना विमाधारक सदस्य म्हणतात."
+      }
+    },
+    {
+      "id": "nominee",
+      "aliases": [
+        "nominee",
+        "nomination"
+      ],
+      "term": {
+        "en": "Nominee",
+        "hi": "नॉमिनी (Nominee)",
+        "mr": "नॉमिनी (Nominee)"
+      },
+      "definition": {
+        "en": "The person you name to receive the policy money if something happens to you.",
+        "hi": "वह व्यक्ति जिसे आप तय करते हैं ताकि आपके साथ कुछ होने पर पॉलिसी की रकम उसे मिले।",
+        "mr": "तुम्हाला काही झाल्यास पॉलिसीची रक्कम ज्या व्यक्तीला मिळावी म्हणून तुम्ही निश्चित केलेली व्यक्ती."
+      }
+    },
+    {
+      "id": "insurer",
+      "aliases": [
+        "insurer",
+        "insurance company",
+        "the company",
+        "insurance provider"
+      ],
+      "term": {
+        "en": "Insurer",
+        "hi": "बीमा कंपनी (Insurer)",
+        "mr": "विमा कंपनी (Insurer)"
+      },
+      "definition": {
+        "en": "The insurance company that issued the policy and pays valid claims.",
+        "hi": "वह कंपनी जिसने पॉलिसी जारी की है और जो वैध क्लेम का भुगतान करती है।",
+        "mr": "ज्या कंपनीने पॉलिसी दिली आहे आणि जी वैध क्लेमचे पैसे देते ती."
+      }
+    },
+    {
+      "id": "claim_settlement_ratio",
+      "aliases": [
+        "claim settlement ratio",
+        "csr",
+        "incurred claim ratio",
+        "icr"
+      ],
+      "term": {
+        "en": "Claim settlement ratio",
+        "hi": "क्लेम सेटलमेंट रेशियो",
+        "mr": "क्लेम सेटलमेंट रेशो"
+      },
+      "definition": {
+        "en": "The share of claims an insurer actually paid out in a year. A higher ratio generally means fewer rejections.",
+        "hi": "किसी साल में बीमा कंपनी ने जितने क्लेम का वास्तव में भुगतान किया उसका प्रतिशत। ज़्यादा रेशियो का मतलब आमतौर पर कम क्लेम खारिज होना है।",
+        "mr": "एखाद्या वर्षात विमा कंपनीने प्रत्यक्षात दिलेल्या क्लेमची टक्केवारी. जास्त रेशो म्हणजे सहसा कमी क्लेम नाकारले जातात."
+      }
+    },
+    {
+      "id": "intimation",
+      "aliases": [
+        "intimation",
+        "claim intimation",
+        "intimate",
+        "notify the insurer",
+        "intimation deadline",
+        "notice of claim"
+      ],
+      "term": {
+        "en": "Claim intimation",
+        "hi": "क्लेम सूचना (Intimation)",
+        "mr": "क्लेम सूचना (Intimation)"
+      },
+      "definition": {
+        "en": "Telling the insurer or TPA about the hospitalization within the time limit in your policy (for example, within 24 hours of emergency admission).",
+        "hi": "पॉलिसी में दी गई समय सीमा के भीतर बीमा कंपनी या टीपीए को अस्पताल में भर्ती होने की जानकारी देना (जैसे आपातकालीन भर्ती के 24 घंटे के भीतर)।",
+        "mr": "पॉलिसीत दिलेल्या वेळमर्यादेत विमा कंपनी किंवा टीपीएला रुग्णालयात दाखल झाल्याची माहिती देणे (उदा. आपत्कालीन दाखल झाल्यापासून 24 तासांत)."
+      }
+    },
+    {
+      "id": "discharge_summary",
+      "aliases": [
+        "discharge summary",
+        "discharge card",
+        "discharge papers"
+      ],
+      "term": {
+        "en": "Discharge summary",
+        "hi": "डिस्चार्ज समरी (Discharge summary)",
+        "mr": "डिस्चार्ज समरी (Discharge summary)"
+      },
+      "definition": {
+        "en": "The hospital's report of your diagnosis, treatment and condition when you leave. Almost every claim needs it.",
+        "hi": "छुट्टी के समय अस्पताल की रिपोर्ट जिसमें निदान, इलाज और आपकी हालत लिखी होती है। लगभग हर क्लेम में यह ज़रूरी होती है।",
+        "mr": "सुट्टी देताना रुग्णालयाने दिलेला अहवाल ज्यात निदान, उपचार आणि तुमची स्थिती लिहिलेली असते. जवळजवळ प्रत्येक क्लेमसाठी तो आवश्यक असतो."
+      }
+    },
+    {
+      "id": "restoration",
+      "aliases": [
+        "restoration",
+        "restore benefit",
+        "recharge",
+        "reset benefit",
+        "refill",
+        "automatic recharge",
+        "re-instatement"
+      ],
+      "term": {
+        "en": "Restoration benefit",
+        "hi": "रिस्टोरेशन बेनिफिट (राशि बहाली)",
+        "mr": "रिस्टोरेशन बेनिफिट (रक्कम पुनर्स्थापना)"
+      },
+      "definition": {
+        "en": "If you use up your sum insured in a year, the insurer refills it once, usually for a different illness. Check the conditions.",
+        "hi": "अगर आप साल में पूरी बीमा राशि खर्च कर दें तो बीमा कंपनी उसे एक बार फिर भर देती है, आमतौर पर किसी दूसरी बीमारी के लिए। शर्तें ज़रूर देखें।",
+        "mr": "वर्षात संपूर्ण विमा रक्कम वापरली गेल्यास विमा कंपनी ती एकदा पुन्हा भरून देते, सहसा दुसऱ्या आजारासाठी. अटी जरूर तपासा."
+      }
+    },
+    {
+      "id": "family_floater",
+      "aliases": [
+        "family floater",
+        "floater",
+        "floater policy"
+      ],
+      "term": {
+        "en": "Family floater",
+        "hi": "फ़ैमिली फ्लोटर (Family floater)",
+        "mr": "फॅमिली फ्लोटर (Family floater)"
+      },
+      "definition": {
+        "en": "One policy and one sum insured shared by the whole family. If one person uses a lot, less is left for the others.",
+        "hi": "पूरे परिवार के लिए एक पॉलिसी और एक साझा बीमा राशि। अगर एक सदस्य ज़्यादा इस्तेमाल करे तो बाकी के लिए कम बचती है।",
+        "mr": "संपूर्ण कुटुंबासाठी एक पॉलिसी आणि एकच सामायिक विमा रक्कम. एका सदस्याने जास्त वापरल्यास इतरांसाठी कमी उरते."
+      }
+    },
+    {
+      "id": "individual_policy",
+      "aliases": [
+        "individual policy",
+        "individual sum insured",
+        "individual cover"
+      ],
+      "term": {
+        "en": "Individual policy",
+        "hi": "इंडिविजुअल पॉलिसी (व्यक्तिगत पॉलिसी)",
+        "mr": "वैयक्तिक पॉलिसी (Individual policy)"
+      },
+      "definition": {
+        "en": "A policy where each insured person has their own separate sum insured.",
+        "hi": "ऐसी पॉलिसी जिसमें हर बीमित व्यक्ति की अपनी अलग बीमा राशि होती है।",
+        "mr": "अशी पॉलिसी ज्यात प्रत्येक विमाधारक व्यक्तीची स्वतंत्र विमा रक्कम असते."
+      }
+    },
+    {
+      "id": "top_up",
+      "aliases": [
+        "top-up",
+        "top up",
+        "topup",
+        "top-up plan"
+      ],
+      "term": {
+        "en": "Top-up plan",
+        "hi": "टॉप-अप प्लान (Top-up)",
+        "mr": "टॉप-अप प्लॅन (Top-up)"
+      },
+      "definition": {
+        "en": "An extra, cheaper cover that starts paying only after your bills in a year cross a chosen amount.",
+        "hi": "एक अतिरिक्त, सस्ता कवर जो साल में आपके बिल एक चुनी हुई रकम पार करने के बाद ही भुगतान शुरू करता है।",
+        "mr": "एक अतिरिक्त, स्वस्त कव्हर जो वर्षात तुमची बिले निवडलेली रक्कम ओलांडल्यानंतरच पैसे देण्यास सुरुवात करतो."
+      }
+    },
+    {
+      "id": "super_top_up",
+      "aliases": [
+        "super top-up",
+        "super top up",
+        "supertopup",
+        "super top-up plan"
+      ],
+      "term": {
+        "en": "Super top-up",
+        "hi": "सुपर टॉप-अप (Super top-up)",
+        "mr": "सुपर टॉप-अप (Super top-up)"
+      },
+      "definition": {
+        "en": "Like a top-up, but it adds up all claims in the year (not just one) before it starts paying.",
+        "hi": "टॉप-अप जैसा ही, पर यह साल के सभी क्लेम को जोड़कर (सिर्फ एक को नहीं) तब भुगतान शुरू करता है।",
+        "mr": "टॉप-अप सारखाच, पण हा वर्षातील सर्व क्लेम एकत्र धरून (फक्त एक नव्हे) मगच पैसे देण्यास सुरुवात करतो."
+      }
+    },
+    {
+      "id": "ayush",
+      "aliases": [
+        "ayush",
+        "ayush treatment",
+        "ayurveda",
+        "homeopathy",
+        "unani"
+      ],
+      "term": {
+        "en": "AYUSH treatment",
+        "hi": "आयुष इलाज (AYUSH)",
+        "mr": "आयुष उपचार (AYUSH)"
+      },
+      "definition": {
+        "en": "Treatment by Ayurveda, Yoga, Unani, Siddha or Homeopathy in a recognised hospital. Some policies cover it, often with limits.",
+        "hi": "मान्यता प्राप्त अस्पताल में आयुर्वेद, योग, यूनानी, सिद्ध या होम्योपैथी से इलाज। कुछ पॉलिसियाँ इसे कवर करती हैं, अक्सर सीमा के साथ।",
+        "mr": "मान्यताप्राप्त रुग्णालयात आयुर्वेद, योग, युनानी, सिद्ध किंवा होमिओपॅथीद्वारे केलेला उपचार. काही पॉलिसी तो कव्हर करतात, बहुतेकदा मर्यादेसह."
+      }
+    },
+    {
+      "id": "maternity_cover",
+      "aliases": [
+        "maternity",
+        "maternity cover",
+        "maternity benefit",
+        "newborn cover",
+        "delivery expenses"
+      ],
+      "term": {
+        "en": "Maternity cover",
+        "hi": "मैटरनिटी कवर (प्रसूति कवर)",
+        "mr": "मॅटर्निटी कव्हर (प्रसूती कव्हर)"
+      },
+      "definition": {
+        "en": "Pays for childbirth and related costs. It usually has a long waiting period (often 2 to 4 years) and a fixed limit.",
+        "hi": "प्रसव और उससे जुड़े खर्च का भुगतान। इसमें आमतौर पर लंबा वेटिंग पीरियड (अक्सर 2 से 4 साल) और तय सीमा होती है।",
+        "mr": "बाळंतपण आणि त्याच्याशी संबंधित खर्चाची भरपाई. यात सहसा मोठा वेटिंग पीरियड (बहुतेकदा 2 ते 4 वर्षे) आणि ठरावीक मर्यादा असते."
+      }
+    },
+    {
+      "id": "critical_illness",
+      "aliases": [
+        "critical illness",
+        "critical illness cover",
+        "critical illness benefit",
+        "ci cover"
+      ],
+      "term": {
+        "en": "Critical illness cover",
+        "hi": "क्रिटिकल इलनेस कवर (गंभीर बीमारी कवर)",
+        "mr": "क्रिटिकल इलनेस कव्हर (गंभीर आजार कव्हर)"
+      },
+      "definition": {
+        "en": "Pays a one-time lump sum if you are diagnosed with a listed serious illness, such as cancer or heart attack, whatever the hospital bill is.",
+        "hi": "कैंसर या हार्ट अटैक जैसी सूची में दी गई गंभीर बीमारी का निदान होने पर अस्पताल के बिल की परवाह किए बिना एकमुश्त रकम देता है।",
+        "mr": "कर्करोग किंवा हृदयविकाराचा झटका यांसारख्या यादीतील गंभीर आजाराचे निदान झाल्यास रुग्णालयाच्या बिलाची पर्वा न करता एकरकमी रक्कम देते."
+      }
+    },
+    {
+      "id": "policy_period",
+      "aliases": [
+        "policy period",
+        "policy term",
+        "policy tenure",
+        "period of insurance",
+        "tenure"
+      ],
+      "term": {
+        "en": "Policy period",
+        "hi": "पॉलिसी अवधि (Policy period)",
+        "mr": "पॉलिसी कालावधी (Policy period)"
+      },
+      "definition": {
+        "en": "The start and end dates between which your cover is active. Claims for treatment outside these dates are not paid.",
+        "hi": "वह शुरुआती और अंतिम तारीख जिनके बीच आपका कवर चालू रहता है। इन तारीखों के बाहर के इलाज का क्लेम नहीं मिलता।",
+        "mr": "तुमचे कव्हर चालू असण्याच्या सुरुवातीच्या आणि शेवटच्या तारखा. या तारखांच्या बाहेरच्या उपचारांचा क्लेम मिळत नाही."
+      }
+    },
+    {
+      "id": "portability",
+      "aliases": [
+        "portability",
+        "port policy",
+        "porting",
+        "switch insurer"
+      ],
+      "term": {
+        "en": "Portability",
+        "hi": "पोर्टेबिलिटी (Portability)",
+        "mr": "पोर्टेबिलिटी (Portability)"
+      },
+      "definition": {
+        "en": "Moving your policy to another insurer while keeping the waiting-period credit you already earned.",
+        "hi": "अपनी पॉलिसी दूसरी बीमा कंपनी में ले जाना, और अब तक जमा हुआ वेटिंग पीरियड का फायदा बनाए रखना।",
+        "mr": "तुमची पॉलिसी दुसऱ्या विमा कंपनीकडे नेणे आणि आतापर्यंत जमा झालेला वेटिंग पीरियडचा फायदा कायम ठेवणे."
+      }
+    },
+    {
+      "id": "endorsement",
+      "aliases": [
+        "endorsement",
+        "endorsements",
+        "policy endorsement"
+      ],
+      "term": {
+        "en": "Endorsement",
+        "hi": "एंडोर्समेंट (पॉलिसी संशोधन)",
+        "mr": "एंडोर्समेंट (पॉलिसी दुरुस्ती)"
+      },
+      "definition": {
+        "en": "A written change added to your policy after it was issued, such as a new address, added member or changed cover.",
+        "hi": "पॉलिसी जारी होने के बाद उसमें जोड़ा गया लिखित बदलाव, जैसे नया पता, नया सदस्य या बदला हुआ कवर।",
+        "mr": "पॉलिसी दिल्यानंतर त्यात जोडलेला लेखी बदल, जसे नवीन पत्ता, नवीन सदस्य किंवा बदललेले कव्हर."
+      }
+    },
+    {
+      "id": "rider_add_on",
+      "aliases": [
+        "rider",
+        "add-on",
+        "add on",
+        "riders",
+        "optional cover",
+        "add-on cover"
+      ],
+      "term": {
+        "en": "Rider / add-on",
+        "hi": "राइडर / ऐड-ऑन",
+        "mr": "रायडर / अ‍ॅड-ऑन"
+      },
+      "definition": {
+        "en": "An optional extra cover you buy on top of the base policy for a small additional premium.",
+        "hi": "बेस पॉलिसी के ऊपर थोड़े अतिरिक्त प्रीमियम पर खरीदा जाने वाला वैकल्पिक अतिरिक्त कवर।",
+        "mr": "मूळ पॉलिसीवर थोड्या अतिरिक्त प्रीमियमवर घेतले जाणारे ऐच्छिक अतिरिक्त कव्हर."
+      }
+    },
+    {
+      "id": "icu_charges",
+      "aliases": [
+        "icu",
+        "icu charges",
+        "intensive care",
+        "iccu",
+        "icu rent"
+      ],
+      "term": {
+        "en": "ICU charges",
+        "hi": "आईसीयू खर्च (ICU charges)",
+        "mr": "आयसीयू खर्च (ICU charges)"
+      },
+      "definition": {
+        "en": "The daily cost of the intensive care unit. Some policies cap it separately from normal room rent.",
+        "hi": "गहन चिकित्सा इकाई का रोज़ का खर्च। कुछ पॉलिसियाँ इसकी सीमा सामान्य कमरे के किराये से अलग तय करती हैं।",
+        "mr": "अतिदक्षता विभागाचा रोजचा खर्च. काही पॉलिसी याची मर्यादा सामान्य खोली भाड्यापासून वेगळी ठरवतात."
+      }
+    },
+    {
+      "id": "moratorium_period",
+      "aliases": [
+        "moratorium",
+        "moratorium period"
+      ],
+      "term": {
+        "en": "Moratorium period",
+        "hi": "मोराटोरियम पीरियड",
+        "mr": "मोरॅटोरियम पीरियड"
+      },
+      "definition": {
+        "en": "After 5 continuous years (60 months) of cover, the insurer generally cannot reject a claim for non-disclosure, except for fraud or permanent exclusions. Check your policy for the exact rule.",
+        "hi": "लगातार 5 साल (60 महीने) कवर के बाद बीमा कंपनी आमतौर पर जानकारी छिपाने के आधार पर क्लेम खारिज नहीं कर सकती, सिवाय धोखाधड़ी या स्थायी बहिष्करण के। सटीक नियम पॉलिसी में देखें।",
+        "mr": "सलग 5 वर्षे (60 महिने) कव्हर राहिल्यानंतर विमा कंपनी सहसा माहिती लपवल्याच्या कारणावरून क्लेम नाकारू शकत नाही, फसवणूक किंवा कायमस्वरूपी वगळलेल्या गोष्टी वगळता. नेमका नियम पॉलिसीत तपासा."
+      }
+    },
+    {
+      "id": "claim_form",
+      "aliases": [
+        "claim form",
+        "claim forms",
+        "claim application"
+      ],
+      "term": {
+        "en": "Claim form",
+        "hi": "क्लेम फ़ॉर्म (Claim form)",
+        "mr": "क्लेम फॉर्म (Claim form)"
+      },
+      "definition": {
+        "en": "The form you fill in and sign to ask the insurer for payment, attached with bills and reports.",
+        "hi": "भुगतान माँगने के लिए बीमा कंपनी को भरकर और हस्ताक्षर करके दिया जाने वाला फ़ॉर्म, जिसके साथ बिल और रिपोर्ट लगती हैं।",
+        "mr": "पैसे मागण्यासाठी विमा कंपनीला भरून आणि सही करून द्यायचा फॉर्म, ज्यासोबत बिले आणि अहवाल जोडावे लागतात."
+      }
+    },
+    {
+      "id": "policy_schedule",
+      "aliases": [
+        "policy schedule",
+        "schedule of benefits",
+        "table of benefits",
+        "policy certificate"
+      ],
+      "term": {
+        "en": "Policy schedule",
+        "hi": "पॉलिसी शेड्यूल (Policy schedule)",
+        "mr": "पॉलिसी शेड्यूल (Policy schedule)"
+      },
+      "definition": {
+        "en": "The page that lists your personal details: name, policy number, dates, sum insured and premium.",
+        "hi": "वह पन्ना जिसमें आपकी निजी जानकारी होती है: नाम, पॉलिसी नंबर, तारीखें, बीमा राशि और प्रीमियम।",
+        "mr": "तुमची वैयक्तिक माहिती असलेले पान: नाव, पॉलिसी क्रमांक, तारखा, विमा रक्कम आणि प्रीमियम."
+      }
+    },
+    {
+      "id": "non_payable_items",
+      "aliases": [
+        "non-payable items",
+        "non payable items",
+        "non-medical expenses",
+        "consumables",
+        "non-admissible",
+        "non admissible"
+      ],
+      "term": {
+        "en": "Non-payable items",
+        "hi": "नॉन-पेएबल आइटम (जो खर्च नहीं मिलता)",
+        "mr": "नॉन-पेएबल आयटम (जो खर्च मिळत नाही)"
+      },
+      "definition": {
+        "en": "Hospital charges many policies do not pay, such as gloves, masks, registration fees and administration charges. These can add up to a real gap.",
+        "hi": "अस्पताल के वे शुल्क जो कई पॉलिसियाँ नहीं देतीं, जैसे दस्ताने, मास्क, रजिस्ट्रेशन फीस और प्रशासनिक शुल्क। ये मिलकर काफ़ी बड़ी रकम बन सकते हैं।",
+        "mr": "अनेक पॉलिसी न देणारे रुग्णालयाचे शुल्क, जसे हातमोजे, मास्क, नोंदणी फी आणि प्रशासकीय शुल्क. हे मिळून मोठा फरक पडू शकतो."
+      }
+    },
+    {
+      "id": "disease_wise_capping",
+      "aliases": [
+        "disease wise capping",
+        "disease-wise capping",
+        "disease wise limit",
+        "procedure wise limit",
+        "capping"
+      ],
+      "term": {
+        "en": "Disease-wise capping",
+        "hi": "बीमारी-वार सीमा (Disease-wise capping)",
+        "mr": "आजारनिहाय मर्यादा (Disease-wise capping)"
+      },
+      "definition": {
+        "en": "A fixed maximum the insurer pays for a particular illness or surgery, whatever your total sum insured is.",
+        "hi": "किसी खास बीमारी या ऑपरेशन के लिए बीमा कंपनी की तय अधिकतम रकम, चाहे आपकी कुल बीमा राशि कितनी भी हो।",
+        "mr": "एखाद्या विशिष्ट आजारासाठी किंवा शस्त्रक्रियेसाठी विमा कंपनीने द्यायची ठरलेली कमाल रक्कम, एकूण विमा रक्कम कितीही असली तरी."
+      }
+    }
+  ]
+}

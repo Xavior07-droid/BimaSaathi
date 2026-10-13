@@ -1,0 +1,199 @@
+{
+  "policy_id": "sample-policy",
+  "insurer": "Sanjivani General Insurance Co. Ltd.",
+  "policy_no": "SGI/HP/2025/004512",
+  "policy_type": "health",
+  "holder_name": "Rahul Deshmukh",
+  "start_date": "2025-04-01",
+  "end_date": "2026-03-31",
+  "renewal_date": "2026-04-01",
+  "sum_insured": 500000,
+  "premium": 14250,
+  "waiting_periods": {
+    "initial_days": 30,
+    "pre_existing_months": 36,
+    "specific_diseases_months": 24
+  },
+  "room_rent_cap": {
+    "value": 5000,
+    "unit": "per_day"
+  },
+  "copay_percent": 10,
+  "sub_limits": [
+    {
+      "item": "Cataract (per eye)",
+      "limit": 40000,
+      "source": {
+        "page": 3,
+        "clause": "3.3"
+      }
+    },
+    {
+      "item": "Knee replacement (per policy year)",
+      "limit": 150000,
+      "source": {
+        "page": 3,
+        "clause": "3.3"
+      }
+    },
+    {
+      "item": "Road ambulance (per hospitalisation)",
+      "limit": 2000,
+      "source": {
+        "page": 2,
+        "clause": "1.5"
+      }
+    }
+  ],
+  "covered": [
+    {
+      "text": "In-patient hospitalisation (stay of more than 24 hours): room, boarding, nursing, doctor and surgeon fees, ICU, operation theatre, medicines",
+      "source": {
+        "page": 2,
+        "clause": "1.1"
+      }
+    },
+    {
+      "text": "Pre-hospitalisation medical expenses for 30 days before admission",
+      "source": {
+        "page": 2,
+        "clause": "1.2"
+      }
+    },
+    {
+      "text": "Post-hospitalisation medical expenses for 60 days after discharge",
+      "source": {
+        "page": 2,
+        "clause": "1.3"
+      }
+    },
+    {
+      "text": "Day care procedures such as cataract, dialysis and chemotherapy",
+      "source": {
+        "page": 2,
+        "clause": "1.4"
+      }
+    },
+    {
+      "text": "Road ambulance up to Rs. 2,000 per hospitalisation",
+      "source": {
+        "page": 2,
+        "clause": "1.5"
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "text": "Cosmetic or plastic surgery unless needed after an accident",
+      "source": {
+        "page": 4,
+        "clause": "4.1"
+      }
+    },
+    {
+      "text": "Dental treatment unless caused by an accident",
+      "source": {
+        "page": 4,
+        "clause": "4.2"
+      }
+    },
+    {
+      "text": "Infertility and assisted reproduction",
+      "source": {
+        "page": 4,
+        "clause": "4.3"
+      }
+    },
+    {
+      "text": "Injury from adventure sports such as paragliding",
+      "source": {
+        "page": 4,
+        "clause": "4.4"
+      }
+    },
+    {
+      "text": "War, nuclear risks and self-inflicted injury",
+      "source": {
+        "page": 4,
+        "clause": "4.5"
+      }
+    },
+    {
+      "text": "Obesity and weight-control treatment",
+      "source": {
+        "page": 4,
+        "clause": "4.6"
+      }
+    }
+  ],
+  "claim_requirements": {
+    "cashless": [
+      "Pre-authorisation form",
+      "Health card",
+      "Photo ID"
+    ],
+    "reimbursement": [
+      "Claim form",
+      "Original bills and receipts",
+      "Discharge summary",
+      "Investigation reports",
+      "Doctor's prescription",
+      "Cancelled cheque"
+    ],
+    "intimation_deadline_hours": 48
+  },
+  "red_flags": [
+    {
+      "title": "You pay 10% of every claim",
+      "why_it_matters": "Even on an approved claim you pay 10% yourself, so the insurer never pays the full bill.",
+      "source": {
+        "page": 3,
+        "clause": "3.2"
+      }
+    },
+    {
+      "title": "Room rent is capped at Rs 5,000 per day",
+      "why_it_matters": "If you take a costlier room, the insurer also reduces other charges like doctor fees in the same proportion, so your own share can be much larger than the room difference.",
+      "source": {
+        "page": 3,
+        "clause": "3.1"
+      }
+    },
+    {
+      "title": "Long wait for pre-existing diseases",
+      "why_it_matters": "Any illness you already had when buying the policy is not covered for the first 36 months.",
+      "source": {
+        "page": 3,
+        "clause": "2.2"
+      }
+    },
+    {
+      "title": "Fixed limits on cataract and knee replacement",
+      "why_it_matters": "Cataract is paid up to Rs 40,000 per eye and knee replacement up to Rs 1,50,000. Any bill above this is yours to pay.",
+      "source": {
+        "page": 3,
+        "clause": "3.3"
+      }
+    },
+    {
+      "title": "Tell the insurer within 48 hours",
+      "why_it_matters": "For an emergency admission you must inform the insurer within 48 hours, otherwise the claim can be delayed or disputed.",
+      "source": {
+        "page": 5,
+        "clause": "5.1"
+      }
+    }
+  ],
+  "plain_summary": {
+    "en": "This is a health policy from Sanjivani General Insurance for Rahul Deshmukh. It runs from 01 Apr 2025 to 31 Mar 2026 and gives a cover (sum insured) of Rs 5,00,000 for a yearly premium of Rs 14,250. It pays for hospital stays, costs before and after admission, and day care treatments. You wait 30 days before most claims, 36 months for illnesses you already had, and 24 months for some listed illnesses. You pay 10% of each claim, and room rent is capped at Rs 5,000 per day. Renewal is due on 01 Apr 2026.",
+    "hi": "यह सांजीवनी जनरल इंश्योरेंस की राहुल देशमुख के नाम की स्वास्थ्य पॉलिसी है। यह 01 Apr 2025 से 31 Mar 2026 तक चलती है और Rs 5,00,000 का कवर (बीमा राशि) देती है, जिसका सालाना प्रीमियम Rs 14,250 है। इसमें अस्पताल में भर्ती, भर्ती से पहले और बाद का खर्च, और डे-केयर इलाज शामिल हैं। ज़्यादातर क्लेम के लिए 30 दिन पहले से मौजूद बीमारियों के लिए 36 महीने और कुछ चुनी हुई बीमारियों के लिए 24 महीने इंतज़ार करना होगा। हर क्लेम का 10% आपको देना होगा और कमरे का किराया Rs 5,000 प्रति दिन तक सीमित है। नवीनीकरण की तारीख 01 Apr 2026 है।",
+    "mr": "ही सांजीवनी जनरल इन्शुरन्सची राहुल देशमुख यांच्या नावावरील आरोग्य पॉलिसी आहे. ती 01 Apr 2025 ते 31 Mar 2026 पर्यंत चालते आणि Rs 5,00,000 चे संरक्षण (विमा रक्कम) देते; वार्षिक हप्ता Rs 14,250 आहे. यात रुग्णालयात दाखल होणे, दाखल होण्याआधीचा व नंतरचा खर्च आणि डे-केअर उपचार यांचा समावेश आहे. बहुतेक दाव्यांसाठी 30 दिवस आधीपासून असलेल्या आजारांसाठी 36 महिने आणि काही विशिष्ट आजारांसाठी 24 महिने थांबावे लागते. प्रत्येक दाव्यातील 10% तुम्हाला भरावे लागतात आणि खोली भाडे Rs 5,000 प्रति दिवस इतके मर्यादित आहे. नूतनीकरणाची तारीख 01 Apr 2026 आहे."
+  },
+  "extraction_meta": {
+    "model": "mock",
+    "confidence": null,
+    "file_hash": "b5ee381bbfe1fe858dc3a52438d54b3b10c21cbcab6c7309abf943afe8759341",
+    "created_at": "2026-10-13T00:00:00Z",
+    "schema_version": "1.0"
+  }
+}

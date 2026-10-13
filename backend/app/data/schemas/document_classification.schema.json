@@ -1,0 +1,124 @@
+{
+  "$defs": {
+    "DocDate": {
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "format": "date",
+          "title": "Date",
+          "type": "string"
+        },
+        "label": {
+          "enum": [
+            "admission",
+            "discharge",
+            "bill",
+            "report",
+            "prescription",
+            "other"
+          ],
+          "title": "Label",
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "date"
+      ],
+      "title": "DocDate",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "What the document-classify call returns (A23): facts read off ONE claim-document image. R's checker compares them in code.",
+  "properties": {
+    "dates": {
+      "description": "dates printed on the document, ISO format, each with a label",
+      "items": {
+        "$ref": "#/$defs/DocDate"
+      },
+      "title": "Dates",
+      "type": "array"
+    },
+    "doc_type": {
+      "description": "what kind of document this is; unreadable if you cannot tell",
+      "enum": [
+        "claim_form",
+        "discharge_summary",
+        "hospital_bill",
+        "pharmacy_bill",
+        "investigation_report",
+        "prescription",
+        "doctor_note",
+        "id_proof",
+        "insurance_card",
+        "cancelled_cheque",
+        "police_report",
+        "other",
+        "unreadable"
+      ],
+      "title": "Doc Type",
+      "type": "string"
+    },
+    "has_signature": {
+      "description": "true only if a handwritten signature is visible",
+      "title": "Has Signature",
+      "type": "boolean"
+    },
+    "has_stamp": {
+      "description": "true only if a hospital/doctor/pharmacy stamp or seal is visible",
+      "title": "Has Stamp",
+      "type": "boolean"
+    },
+    "issues": {
+      "description": "problems that make this image hard to use",
+      "items": {
+        "enum": [
+          "blurry",
+          "too_dark",
+          "glare",
+          "cut_off",
+          "rotated",
+          "handwriting_hard_to_read",
+          "partial_page",
+          "low_resolution",
+          "unreadable"
+        ],
+        "type": "string"
+      },
+      "title": "Issues",
+      "type": "array"
+    },
+    "patient_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "the patient's name in English letters, or null if not shown",
+      "title": "Patient Name"
+    },
+    "quality": {
+      "description": "good = all text readable; fair = key fields readable; poor = key fields hard to read",
+      "enum": [
+        "good",
+        "fair",
+        "poor"
+      ],
+      "title": "Quality",
+      "type": "string"
+    }
+  },
+  "required": [
+    "doc_type",
+    "has_stamp",
+    "has_signature",
+    "quality"
+  ],
+  "title": "DocumentClassification",
+  "type": "object"
+}

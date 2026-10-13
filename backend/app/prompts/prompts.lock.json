@@ -1,0 +1,12 @@
+{
+  "_note": "SHA-256 of each prompt file (line endings normalised). Do not edit by hand: run `python scripts/prompt_versions.py --update`. Prefer a NEW version file over re-locking a scored prompt.",
+  "prompts": {
+    "ask_v1": "7e29dcc9842e3b82449e9ccfd1ad9361e72ab91d35101ded8bbcb3dd929b9d00",
+    "doc_classify_v1": "6cc0440fea5582a0168dbb99492277e0fe0e1c405cc2b8b57cab06eb6399fe18",
+    "exclusion_match_v1": "acf617ac029086548da4c16c8e177687b1a82e3bf937d25a818ca5b0181e75e6",
+    "extract_v1": "89b871868997e892ba5c9085bd6d7921b9b71669bed7338e835b36fc5eb966a3",
+    "fraud_reason_v1": "980308c1a2eeead392fa457c48bb8a8a9407cb1820ce2ff527c56131012a224a",
+    "recommend_v1": "e53407b834c60c4e1bac67d642d075b3daa399c3783b7f90497af7dadce5da75",
+    "summary_v1": "df727d87045bae3e383368655266ba49a1b89ba1149f37f6d860d69874866a55"
+  }
+}

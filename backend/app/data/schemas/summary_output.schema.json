@@ -1,0 +1,98 @@
+{
+  "$defs": {
+    "PlainSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "minLength": 1,
+          "title": "En",
+          "type": "string"
+        },
+        "hi": {
+          "minLength": 1,
+          "title": "Hi",
+          "type": "string"
+        },
+        "mr": {
+          "minLength": 1,
+          "title": "Mr",
+          "type": "string"
+        }
+      },
+      "required": [
+        "en",
+        "hi",
+        "mr"
+      ],
+      "title": "PlainSummary",
+      "type": "object"
+    },
+    "RedFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "why_it_matters": {
+          "minLength": 1,
+          "title": "Why It Matters",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "why_it_matters",
+        "source"
+      ],
+      "title": "RedFlag",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "clause": {
+          "description": "Clause / section number or heading, e.g. '4.2' or 'Exclusions'",
+          "minLength": 1,
+          "title": "Clause",
+          "type": "string"
+        },
+        "page": {
+          "description": "1-based page number from the [Page N] marker",
+          "minimum": 1,
+          "title": "Page",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "page",
+        "clause"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "What the SECOND Gemini call returns.",
+  "properties": {
+    "plain_summary": {
+      "$ref": "#/$defs/PlainSummary"
+    },
+    "red_flags": {
+      "items": {
+        "$ref": "#/$defs/RedFlag"
+      },
+      "title": "Red Flags",
+      "type": "array"
+    }
+  },
+  "required": [
+    "plain_summary"
+  ],
+  "title": "SummaryOutput",
+  "type": "object"
+}
