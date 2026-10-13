@@ -1,0 +1,64 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/noto-sans-devanagari';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 16px; /* never smaller: min font 16px (spec) */
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-surface-alt font-sans text-base text-ink antialiased;
+    min-width: 320px;
+  }
+
+  /* Devanagari needs slightly more line height to avoid clipped matras. */
+  :lang(hi),
+  :lang(mr) {
+    line-height: 1.75;
+  }
+
+  h1 { @apply text-2xl font-bold; }
+  h2 { @apply text-xl font-semibold; }
+  h3 { @apply text-lg font-semibold; }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-600 ring-offset-2;
+  }
+
+  button, [role='button'], a, input, select, textarea {
+    touch-action: manipulation;
+  }
+}
+
+@layer components {
+  .page { @apply w-full; } /* layout padding now comes from AppShell */
+
+  .card { @apply rounded-card border border-surface-line bg-surface p-4 shadow-card; }
+
+  .btn {
+    @apply inline-flex min-h-touch items-center justify-center gap-2 rounded-card px-5
+           text-base font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary { @apply btn bg-brand-700 text-white hover:bg-brand-800 active:bg-brand-900; }
+  .btn-secondary { @apply btn border border-brand-700 bg-surface text-brand-800 hover:bg-brand-50; }
+  .btn-ghost { @apply btn text-brand-800 hover:bg-brand-50; }
+  .btn-lg { @apply min-h-touch-lg text-lg; }
+
+  .input {
+    @apply min-h-touch w-full rounded-card border border-surface-edge bg-surface px-4
+           text-base text-ink placeholder:text-ink-muted;
+  }
+
+  /* Status chip: ALWAYS pair with an icon + text label, never colour alone. */
+  .chip { @apply inline-flex min-h-[2rem] items-center gap-1.5 rounded-pill border px-3 text-base font-medium; }
+  .chip-success { @apply chip border-success-line bg-success-bg text-success-fg; }
+  .chip-warning { @apply chip border-warning-line bg-warning-bg text-warning-fg; }
+  .chip-danger { @apply chip border-danger-line bg-danger-bg text-danger-fg; }
+  .chip-info { @apply chip border-info-line bg-info-bg text-info-fg; }
+  .chip-neutral { @apply chip border-neutral-line bg-neutral-bg text-neutral-fg; }
+}

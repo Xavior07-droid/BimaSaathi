@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "BimaSaathi",
+  "short_name": "BimaSaathi",
+  "description": "Understand and manage your health insurance policy, in your language.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f8fa",
+  "theme_color": "#17645f",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["finance", "health", "utilities"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Check a claim", "short_name": "Claim", "url": "/claim/?source=shortcut", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Compare policies", "short_name": "Compare", "url": "/compare/?source=shortcut", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Renewals", "short_name": "Renewals", "url": "/renewals/?source=shortcut", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ]
+}
