@@ -1,5 +1,4 @@
 """A21: the 15-question set and its scorer. The scorer must catch what A19's code cannot (a valid-looking but wrong answer)."""
-import copy
 import json
 import subprocess
 import sys

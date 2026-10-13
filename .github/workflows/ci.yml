@@ -1,29 +1,51 @@
+# CI for pull requests and main (step R25). Backend only: Main/Frontend add their own job below.
 name: CI
 
 on:
+  pull_request:
   push:
     branches: [main]
-  pull_request:
 
 jobs:
   backend:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: backend/requirements.txt
+          cache-dependency-path: |
+            backend/requirements.txt
+            backend/requirements-dev.txt
+
       - name: Install
-        working-directory: backend
-        run: pip install -r requirements.txt
-      - name: Test
-        working-directory: backend
-        env:
-          ALLOW_DEV_AUTH: "true"
-          USE_FIRESTORE: "false"
-        run: python -m pytest -q
+        run: pip install -r requirements-dev.txt
+
+      # Real errors only (unused imports, undefined names, syntax). Style is not gated.
+      - name: Lint
+        run: ruff check --isolated --select E9,F --line-length 120 app tests ../data
+
+      # Tests need no network, Gemini key or Firebase: all of them are faked.
+      - name: Tests (with coverage)
+        run: coverage run -m pytest
+
+      - name: Coverage report (everything, for information)
+        run: coverage report
+
+      # The rules / calculator / compare / fraud lane must stay well covered.
+      # Add a file here when it joins the lane (e.g. app/services/peer_outliers.py).
+      - name: Coverage gate for the Rules and Data lane (90%)
+        run: >
+          coverage report --fail-under=90 --include="app/services/rules.py,app/services/calculator.py,app/services/docs_check.py,app/services/readiness.py,app/services/benchmarks.py,app/services/fraud_rules.py,app/services/compare_table.py,app/services/compare_summary.py,app/models/claim.py,app/models/compare.py,app/models/fraud.py"
+
+      # Fails if someone edits seed.py or the CSVs by hand and they drift apart.
+      - name: Synthetic data is up to date
+        run: python ../data/seed.py --check
 
   frontend:
     runs-on: ubuntu-latest
@@ -38,3 +60,4 @@ jobs:
           else
             echo "frontend not started yet, skipping"
           fi
+

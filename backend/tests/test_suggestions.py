@@ -3,7 +3,7 @@ import re
 
 import pytest
 
-from app.models.policy import ClaimRequirements, PolicyBrain, RedFlag, Source, WaitingPeriods
+from app.models.policy import ClaimRequirements, RedFlag, Source, WaitingPeriods
 from app.services import ask as A
 from app.services import suggestions as S
 from app.services.glossary import load_glossary

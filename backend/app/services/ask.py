@@ -15,7 +15,7 @@ import logging
 import re
 import time
 from collections import defaultdict, deque
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Callable
 
 from pydantic import ValidationError

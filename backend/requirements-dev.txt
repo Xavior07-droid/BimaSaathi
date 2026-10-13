@@ -1,0 +1,13 @@
+# Everything CI (and a teammate's laptop) needs to run the tests: `pip install -r requirements-dev.txt`
+# Versions are left open on purpose; pin them once Main fixes the final stack.
+-r requirements.txt
+# Runtime packages the tests import. Listed again so a half-filled requirements.txt cannot break CI.
+fastapi
+pydantic>=2
+pillow
+python-multipart
+httpx
+# Test and lint tools
+pytest
+coverage
+ruff

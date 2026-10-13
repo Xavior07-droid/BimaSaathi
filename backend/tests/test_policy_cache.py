@@ -5,7 +5,6 @@ from types import SimpleNamespace
 import pytest
 
 from app.config import Settings
-from app.models.policy import PolicyBrain
 from app.services import policy_cache as PC
 from app.services.gemini import GeminiClient, GeminiRequestError
 from app.services.pdf import sha256_hex

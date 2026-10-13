@@ -9,7 +9,7 @@ from app.models.policy import PolicyBrain
 from app.routers import policy as P
 from app.services import policy_cache as PC
 from app.services.mock_policy import load_sample_policy
-from tests.test_ingest import CLEAN, GOOD, Ctx, FakeGemini, SlowGemini
+from tests.test_ingest import GOOD, Ctx, FakeGemini, SlowGemini
 
 T0 = datetime(2026, 10, 1, tzinfo=timezone.utc)
 

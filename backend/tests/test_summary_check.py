@@ -1,6 +1,5 @@
 """A17: number-consistency checker."""
 import copy
-import json
 from datetime import date
 
 import pytest

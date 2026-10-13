@@ -5,13 +5,11 @@ import re
 import pytest
 
 from app.config import Settings
-from app.models.policy import AskOutput
 from app.routers import policy as P
 from app.services import ask as A
 from app.services import summary_check as S
 from app.services.gemini import GeminiBadOutput, GeminiBusy, GeminiClient, GeminiRequestError
 from app.services.mock_policy import load_sample_policy
-from tests.test_ingest import Ctx
 from tests.test_policy_brain import FakeGemini
 from tests.test_policy_api import Ctx2
 

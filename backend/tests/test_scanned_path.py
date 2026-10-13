@@ -2,7 +2,6 @@
 import io
 
 import pymupdf
-import pytest
 from PIL import Image
 
 from app.services import policy_brain as PB

@@ -16,7 +16,7 @@ from app.routers import ingest as I
 from app.services import policy_cache as PC
 from app.services.gemini import GeminiBusy, GeminiClient, GeminiRequestError
 from app.services.ingest_jobs import JobTracker, get_tracker
-from tests.test_policy_brain import CLEAN, GOOD, MANIFEST, FakeGemini, answer_from_manifest, bad, pdf_bytes
+from tests.test_policy_brain import CLEAN, GOOD, MANIFEST, FakeGemini, bad, pdf_bytes
 
 
 class SlowGemini(FakeGemini):

@@ -17,7 +17,6 @@ HTTP request against RPM, and Google counts each against RPD, so `http_worst` mu
 """
 from __future__ import annotations
 
-import math
 from dataclasses import dataclass
 
 # --- constants mirrored from the code; tests/test_quota.py::test_constants_match_the_code fails if they drift ---
