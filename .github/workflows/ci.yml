@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+      - name: Install
+        working-directory: backend
+        run: pip install -r requirements.txt
+      - name: Test
+        working-directory: backend
+        env:
+          ALLOW_DEV_AUTH: "true"
+          USE_FIRESTORE: "false"
+        run: python -m pytest -q
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build (skips until frontend/package.json has content)
+        working-directory: frontend
+        run: |
+          if [ -s package.json ]; then
+            npm ci || npm install
+            npm run build
+          else
+            echo "frontend not started yet, skipping"
+          fi
